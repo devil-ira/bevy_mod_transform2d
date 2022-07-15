@@ -7,7 +7,7 @@ use bevy::{math::Mat2, prelude::*};
 /// 
 /// If this [`Transform2d`] has a parent, then it's relative to the [`Transform2d`] or [`Transform`] of the parent.
 #[derive(Component, Debug, PartialEq, Clone, Copy, Reflect)]
-#[reflect(Component, PartialEq)]
+#[reflect(Component, PartialEq, Default)]
 pub struct Transform2d {
     /// The translation along the `X` and `Y` axes.
     pub translation: Vec2,

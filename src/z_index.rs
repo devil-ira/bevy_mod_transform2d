@@ -4,5 +4,5 @@ use bevy::prelude::*;
 /// This component maps directly to the z translation of the Transform,
 /// and if not present the z translation is left as it was.
 #[derive(Component, Debug, PartialEq, Clone, Copy, Default, Reflect)]
-#[reflect(Component, PartialEq)]
+#[reflect(Component, PartialEq, Default)]
 pub struct ZIndex(pub f32);

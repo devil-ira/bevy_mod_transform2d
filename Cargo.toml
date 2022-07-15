@@ -10,5 +10,10 @@ keywords = ["bevy", "gamedev"]
 categories = ["game-development"]
 
 [dependencies]
-bevy = "0.7"
-bevy_rapier2d = { version = ">= 0.14, < 0.16", default-features = false, optional = true }
+bevy = "0.8.0-dev"
+bevy_rapier2d = { version = "*", default-features = false, optional = true }
+
+[patch.crates-io]
+bevy = { path = "../bevy" }
+bevy_rapier2d = { path = "../bevy_rapier/bevy_rapier2d" }
+nalgebra = { path = "../nalgebra" }
